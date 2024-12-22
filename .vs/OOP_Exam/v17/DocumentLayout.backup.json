@@ -1,0 +1,104 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Projects\\Rider\\OOP_Exam\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{502C0AFA-8146-4EEA-B98B-9609C825C54F}|Infrastructure\\Infrastructure.csproj|d:\\projects\\rider\\oop_exam\\infrastructure\\infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{502C0AFA-8146-4EEA-B98B-9609C825C54F}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F756699-056B-4940-AF7F-FEA83B476FB2}|Tests\\Tests.csproj|d:\\projects\\rider\\oop_exam\\tests\\tests\\unit\\loggerfactorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F756699-056B-4940-AF7F-FEA83B476FB2}|Tests\\Tests.csproj|solutionrelative:tests\\tests\\unit\\loggerfactorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFB2A610-F991-4BA7-A055-18AAA8130FA1}|Application\\Application.csproj|d:\\projects\\rider\\oop_exam\\application\\loggerfactory\\loggerfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFB2A610-F991-4BA7-A055-18AAA8130FA1}|Application\\Application.csproj|solutionrelative:application\\loggerfactory\\loggerfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F756699-056B-4940-AF7F-FEA83B476FB2}|Tests\\Tests.csproj|d:\\projects\\rider\\oop_exam\\tests\\tests\\unit\\fileloggertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F756699-056B-4940-AF7F-FEA83B476FB2}|Tests\\Tests.csproj|solutionrelative:tests\\tests\\unit\\fileloggertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{de1fc918-f32e-4dd7-a915-1792a051f26b}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Infrastructure",
+              "DocumentMoniker": "D:\\Projects\\Rider\\OOP_Exam\\Infrastructure\\Infrastructure.csproj",
+              "RelativeDocumentMoniker": "Infrastructure\\Infrastructure.csproj",
+              "ToolTip": "D:\\Projects\\Rider\\OOP_Exam\\Infrastructure\\Infrastructure.csproj",
+              "RelativeToolTip": "Infrastructure\\Infrastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-22T20:20:00.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoggerFactoryTests.cs",
+              "DocumentMoniker": "D:\\Projects\\Rider\\OOP_Exam\\Tests\\Tests\\Unit\\LoggerFactoryTests.cs",
+              "RelativeDocumentMoniker": "Tests\\Tests\\Unit\\LoggerFactoryTests.cs",
+              "ToolTip": "D:\\Projects\\Rider\\OOP_Exam\\Tests\\Tests\\Unit\\LoggerFactoryTests.cs",
+              "RelativeToolTip": "Tests\\Tests\\Unit\\LoggerFactoryTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T16:36:25.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoggerFactory.cs",
+              "DocumentMoniker": "D:\\Projects\\Rider\\OOP_Exam\\Application\\LoggerFactory\\LoggerFactory.cs",
+              "RelativeDocumentMoniker": "Application\\LoggerFactory\\LoggerFactory.cs",
+              "ToolTip": "D:\\Projects\\Rider\\OOP_Exam\\Application\\LoggerFactory\\LoggerFactory.cs",
+              "RelativeToolTip": "Application\\LoggerFactory\\LoggerFactory.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T16:32:44.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FileLoggerTests.cs",
+              "DocumentMoniker": "D:\\Projects\\Rider\\OOP_Exam\\Tests\\Tests\\Unit\\FileLoggerTests.cs",
+              "RelativeDocumentMoniker": "Tests\\Tests\\Unit\\FileLoggerTests.cs",
+              "ToolTip": "D:\\Projects\\Rider\\OOP_Exam\\Tests\\Tests\\Unit\\FileLoggerTests.cs",
+              "RelativeToolTip": "Tests\\Tests\\Unit\\FileLoggerTests.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAkwF8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T16:30:14.069Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

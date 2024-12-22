@@ -15,6 +15,11 @@ public class BaseManipulatorRepository(ApplicationDbContext context) : IReposito
 
     public BaseManipulator Add(BaseManipulator entity)
     {
+        var existingEntity = context.BaseManipulators.Local.FirstOrDefault(e => e.Id == entity.Id);
+        if (existingEntity != null)
+        {
+            context.Entry(existingEntity).State = EntityState.Detached;
+        }
         context.BaseManipulators.Add(entity);
         context.SaveChanges();
 
@@ -23,19 +28,14 @@ public class BaseManipulatorRepository(ApplicationDbContext context) : IReposito
 
     public BaseManipulator Remove(BaseManipulator entity)
     {
+        var existingEntity = context.BaseManipulators.Local.FirstOrDefault(e => e.Id == entity.Id);
+        if (existingEntity != null)
+        {
+            context.Entry(existingEntity).State = EntityState.Detached;
+        }
         context.BaseManipulators.Remove(entity);
         context.SaveChanges();
 
-        return entity;
-    }
-
-    public BaseManipulator UpdatePosition(Guid id, string newPosition)
-    {
-        var entity = context.BaseManipulators
-            .AsNoTracking()
-            .First(m => m.Id == id);
-        entity.UpdatePosition(newPosition);
-        context.Update(entity);
         return entity;
     }
 
@@ -48,8 +48,14 @@ public class BaseManipulatorRepository(ApplicationDbContext context) : IReposito
 
     public BaseManipulator Update(BaseManipulator manipulator)
     {
+        var existingEntity = context.BaseManipulators.Local.FirstOrDefault(e => e.Id == manipulator.Id);
+        if (existingEntity != null)
+        {
+            context.Entry(existingEntity).State = EntityState.Detached;
+        }
         context.Update(manipulator);
         context.SaveChanges();
+
         return manipulator;
     }
 }

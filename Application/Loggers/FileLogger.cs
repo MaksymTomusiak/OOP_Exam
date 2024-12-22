@@ -13,7 +13,7 @@ public class FileLogger(string path, IConsoleWrapper consoleWrapper) : ILogger
 
     public void LogError(Exception ex, string message)
     {
-        var errorMessage = $"{message} - Exception: {ex.Message}\n{ex.StackTrace}";
+        var errorMessage = $"{message} - Exception: {ex?.Message}\n{ex?.StackTrace}";
         LogMessage("ERROR", errorMessage);
     }
 
@@ -28,12 +28,11 @@ public class FileLogger(string path, IConsoleWrapper consoleWrapper) : ILogger
             }
 
             var logMessage = $"{DateTime.UtcNow:yyyy-MM-dd HH:mm:ss} [{logLevel}] {message}";
-
             File.AppendAllText(path, logMessage + Environment.NewLine);
         }
         catch (Exception ex)
         {
-            consoleWrapper.WriteLine($"Failed to log message: {ex.Message}");
+            consoleWrapper.WriteLine($"Failed to log message: {ex?.Message}");
         }
     }
 }

@@ -15,27 +15,25 @@ public class IndustrialManipulatorRepository(ApplicationDbContext context) : IRe
 
     public IndustrialManipulator Add(IndustrialManipulator entity)
     {
+        var existingEntity = context.IndustrialManipulators.Local.FirstOrDefault(e => e.Id == entity.Id);
+        if (existingEntity != null)
+        {
+            context.Entry(existingEntity).State = EntityState.Detached;
+        }
         context.IndustrialManipulators.Add(entity);
         context.SaveChanges();
-
         return entity;
     }
 
     public IndustrialManipulator Remove(IndustrialManipulator entity)
     {
+        var existingEntity = context.IndustrialManipulators.Local.FirstOrDefault(e => e.Id == entity.Id);
+        if (existingEntity != null)
+        {
+            context.Entry(existingEntity).State = EntityState.Detached;
+        }
         context.IndustrialManipulators.Remove(entity);
         context.SaveChanges();
-
-        return entity;
-    }
-
-    public IndustrialManipulator UpdatePosition(Guid id, string newPosition)
-    {
-        var entity = context.IndustrialManipulators
-            .AsNoTracking()
-            .First(m => m.Id == id);
-        entity.UpdatePosition(newPosition);
-        context.Update(entity);
         return entity;
     }
 
@@ -48,6 +46,11 @@ public class IndustrialManipulatorRepository(ApplicationDbContext context) : IRe
 
     public IndustrialManipulator Update(IndustrialManipulator manipulator)
     {
+        var existingEntity = context.IndustrialManipulators.Local.FirstOrDefault(e => e.Id == manipulator.Id);
+        if (existingEntity != null)
+        {
+            context.Entry(existingEntity).State = EntityState.Detached;
+        }
         context.Update(manipulator);
         context.SaveChanges();
         return manipulator;

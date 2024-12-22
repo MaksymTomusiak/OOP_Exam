@@ -11,6 +11,6 @@ public class ConsoleLogger(IConsoleWrapper consoleWrapper) : ILogger
 
     public void LogError(Exception ex, string message)
     {
-        consoleWrapper.WriteLine($"[ERROR] {message}\nDetails: {ex.Message}");
+        consoleWrapper.WriteLine($"[ERROR] {message}\nDetails: {ex?.Message}");
     }
 }

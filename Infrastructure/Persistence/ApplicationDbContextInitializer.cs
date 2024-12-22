@@ -4,8 +4,8 @@ namespace Infrastructure.Persistence;
 
 public class ApplicationDbContextInitializer(ApplicationDbContext context)
 {
-    public async Task InitializeAsync()
+    public void Initialize()
     {
-        await context.Database.MigrateAsync();
+        context.Database.Migrate();
     }
 }
